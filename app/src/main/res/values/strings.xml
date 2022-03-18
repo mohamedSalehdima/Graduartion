@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GP</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_your_password">confirm your password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="sign_up2">Sign up</string>
+</resources>

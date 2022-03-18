@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:background="@drawable/background2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:onClick="selectImage"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_below="@id/signIn"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <TextView
+
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="@string/sign_up2"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/email_sign"
+        android:layout_width="394dp"
+        android:layout_height="76dp"
+        android:layout_below="@id/profile_image"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edir_round"
+        android:drawablePadding="20dp"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/password_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_sign"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edir_round"
+        android:drawablePadding="20dp"
+
+        android:hint="@string/enter_your_password"
+        android:inputType="numberPassword"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/confirm_password_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_sign"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edir_round"
+        android:drawablePadding="20dp"
+
+        android:hint="@string/confirm_your_password"
+        android:inputType="numberPassword"
+        android:padding="20dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/logIN"
+        android:layout_width="401dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/confirm_password_sign"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edir_round"
+        android:gravity="center"
+        android:onClick="register"
+        android:text="@string/sign_up"
+        android:textColor="#000"
+        tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>

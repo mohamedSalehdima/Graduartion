@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addStudent"
+    android:background="@drawable/background2">
+
+    <EditText
+        android:id="@+id/UserNameNewStudent"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edir_round"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="user name"
+        android:inputType="textPersonName"
+        android:textColorHint="#000"></EditText>
+
+    <EditText
+        android:id="@+id/idNewStudent"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+        android:layout_below="@id/UserNameNewStudent"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/edir_round"
+        android:gravity="center"
+        android:hint="ID"
+        android:inputType="number"
+        android:textColorHint="#000"></EditText>
+
+    <EditText
+        android:id="@+id/EmailNewStudent"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+
+        android:layout_below="@id/idNewStudent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/edir_round"
+        android:gravity="center"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#000"></EditText>
+
+    <EditText
+        android:id="@+id/passwordNewStudent"
+        android:layout_width="390dp"
+        android:layout_height="68dp"
+
+        android:layout_below="@id/EmailNewStudent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/edir_round"
+        android:gravity="center"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColorHint="#000"></EditText>
+
+    <CheckBox
+        android:id="@+id/year1"
+        android:layout_width="150dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/EmailNewStudent"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="249dp"
+        android:background="@drawable/edir_round"
+        android:text="year 1 "
+        android:textAlignment="center"
+        android:textSize="20dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/year2"
+        android:layout_width="150dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/year1"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-64dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edir_round"
+        android:text="year 2 "
+        android:textAlignment="center"
+        android:textSize="20dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/year3"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/year2"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="243dp"
+        android:background="@drawable/edir_round"
+        android:text="year 3 "
+        android:textAlignment="center"
+        android:textSize="20dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/year4"
+        android:layout_width="155dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/year3"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-65dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edir_round"
+        android:text="year 4 "
+        android:textAlignment="center"
+        android:textSize="20dp"></CheckBox>
+
+    <Button
+        android:id="@+id/AddNewStudent"
+        android:layout_width="174dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/year4"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="122dp"
+        android:background="@drawable/edir_round"
+        android:gravity="center"
+        android:text="ADD"
+        android:textColor="#000"
+        android:textSize="20dp">
+
+
+    </Button>
+</RelativeLayout>
